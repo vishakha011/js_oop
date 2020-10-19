@@ -1,0 +1,162 @@
+:root {
+    --primary-color: #F9234D;
+    --secondary-color:#01122D;
+    --text-color: #6C6B72;
+    --bg-color: #DFECFF;
+  }
+  
+html {
+font-size: 16px;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126
+License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+font: inherit;
+vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+display: block;
+}
+body {
+line-height: 1;
+}
+ol, ul {
+list-style: none;
+}
+blockquote, q {
+quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+content: '';
+content: none;
+}
+table {
+border-collapse: collapse;
+border-spacing: 0;
+}
+
+
+/*
+=============================================================
+Box-sizing
+=============================================================
+*/
+
+*,
+*::before,
+*::after {
+box-sizing: border-box;
+}
+
+/*
+=============================================================
+Custom Styles
+=============================================================
+*/
+body {
+font-family: 'Balsamiq Sans', cursive;
+letter-spacing: -1px;
+width: 100vw;
+height: 100vh;
+/* background-color: #d2d1d7; */
+}
+
+.root {
+max-width: 800px;
+margin: 0rem auto;
+padding: 2rem;
+box-shadow: 0 0 10px 2px;
+border-radius: 5px;
+background-color: #d2d1d7;
+}
+
+.flex-center {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.flex {
+display: flex;
+justify-content: space-around;
+align-items: center;
+}
+
+button {
+    outline: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background-color: #fff;
+} 
+
+button:hover {
+    box-shadow: 0 0 6px 1px goldenrod;
+}
+
+
+.questions {
+font-size: 2rem;
+color: teal;
+}
+
+.btn-grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 0.8rem;
+    margin: 1.5rem 0;
+}
+
+.control button{
+    background-color: goldenrod;
+    padding: 0.5rem 1.5rem;
+    font-weight: 700;
+}
+
+.correct {
+   background-color: limegreen;;
+    color: black;
+}
+
+.wrong {
+    background-color: firebrick;
+}
+
+.start,
+.score {
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 0.5rem 1.5rem;
+    border-radius: 5px;
+    border: none;
+    background-color: goldenrod;
+}
+
+.hide {
+    display: none;
+}
